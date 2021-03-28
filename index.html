@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <header class="header">
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+      <div class="toolbar">
+        <button class="toolbar__button">
+          <img src="./images/icon-document.svg" alt="icon document" />
+        </button>
+        <button class="toolbar__button">
+          <img src="./images/icon-folder.svg" alt="icon folder" />
+        </button>
+        <button class="toolbar__button">
+          <img src="./images/icon-upload.svg" alt="icon upload" />
+        </button>
+      </div>
+    </header>
+    <div class="usage">
+      You’ve used <strong>815 GB</strong> of your storage
+
+      <div class="loadbar__container">
+      <div class="loadbar">
+      </div>
+      </div>
+      <div class="limits">
+        <span>0 GB</span><span> 1000 GB</span>
+      </div>
+      <div class="usage__left-wrapper">
+        <div class="usage__left">
+          <span class="usage__left-number">185</span> GB Left
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/pebraz">@pebraz</a>.
+  </div>
+</body>
+</html>
