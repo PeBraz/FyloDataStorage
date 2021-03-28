@@ -113,6 +113,7 @@ body, html {
     height: 100%;
     width: 75%;
     border-radius: inherit;
+    position: relative;
 }
 
 .loadbar::after {
@@ -140,3 +141,52 @@ body, html {
     color: white;
     font-weight: bold;
 }
+
+@media only screen and (min-width: 376px) {
+    body {
+        background:  var(--color-very-dark-blue)
+    }
+
+    .main {
+        flex-direction: row;
+        align-items: center;
+        background-image: url("./images/bg-desktop.png");
+        background-position-y: calc(100% + 50px);
+        background-repeat: no-repeat;
+    }
+
+    .header {
+        width: 350px;
+        margin-right: 25px;
+    }
+
+    .usage {
+        text-align: left;
+        width: 650px;
+        padding: 36px;
+        margin-top: 16px;
+        position: relative;
+    }
+
+    .usage__left-wrapper {
+        bottom: unset;
+        top: -36px;
+        right: 36px;
+        justify-content: flex-end;
+    }
+
+    .usage__left::after {
+        --triangle-size: 22px;
+
+        content: '';
+
+        width: 0; 
+        height: 0; 
+        border-top: var(--triangle-size) solid transparent;
+        border-bottom: var(--triangle-size)solid transparent; 
+        border-right: var(--triangle-size) solid white; 
+        position: absolute;
+        right: 0;
+        top: calc(100% - var(--triangle-size));
+    }
+  }
